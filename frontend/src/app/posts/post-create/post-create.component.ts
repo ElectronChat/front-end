@@ -5,5 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './post-create.component.html'
 })
 export class PostCreateComponent {
+  newPost = 'before post request';
 
+
+  onAddPost() {
+    this.newPost = 'the user\'s post';
+  }
 }
