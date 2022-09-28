@@ -8,8 +8,7 @@ import { PostsService } from '../posts.service';
   styleUrls: ['./post-create.component.css']
 })
 export class PostCreateComponent {
-  enteredTitle = "";
-  enteredContent = "";
+  enteredRoom = "";
 
   constructor(public postsService: PostsService) {}
 
