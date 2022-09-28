@@ -6,9 +6,18 @@ main {
 
 .images {
   display: block;
-  margin-top: 2rem;
+  margin-top: -4rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
-  width: 25%;
+  width: 50%;
 }
+
+.scrollButton {
+  display: block;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: antiquewhite;
+  transform: scale(2);
+}
+

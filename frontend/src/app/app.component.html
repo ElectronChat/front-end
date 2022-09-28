@@ -3,6 +3,10 @@
   <div class="iamgeParent">
     <img class="images" src="../assets/imgs/electron.png">
   </div>
-  <app-post-create></app-post-create>
+  <app-room-create-join></app-room-create-join>
   <app-post-list></app-post-list>
+  <button mat-button (click)="scroll(target)" class="scrollButton">
+    <mat-icon>arrow_downward</mat-icon>
+  </button>
+  <div #target>About Us</div>
 </main>
