@@ -1,0 +1,10 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+
+button {
+  background-color: rgb(120,120,210);
+  color:aliceblue;
+}
+

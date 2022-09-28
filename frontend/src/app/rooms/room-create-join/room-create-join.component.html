@@ -1,0 +1,11 @@
+<mat-card>
+  <form (submit)="onJoinCreateRoom(roomForm)" #roomForm="ngForm">
+    <mat-form-field>
+      <input matInput type="text" name="roomCode" ngModel required minLength="3" placeholder="Enter room code" #roomCode ="ngModel">
+      <mat-error *ngIf="roomCode.invalid">Please enter a room code.</mat-error>
+    </mat-form-field>
+    <button
+    mat-raised-button
+    type="submit">Join</button>
+  </form>
+</mat-card>

@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { Subscription } from "rxjs";
 
-import { Post } from '../post.model';
-import { PostsService } from "../posts.service";
+import { RoomCreateJoin } from '../room-create-join.model';
+import { RoomsService } from "../rooms.service";
 
 @Component({
   selector: 'app-post-list',
@@ -16,14 +16,14 @@ export class PostListComponent implements OnInit, OnDestroy{
   //   {title: 'Third Post', content: 'This is the third post\'s content'},
   // ];
 
-  posts: Post[] = [];
+  posts: RoomCreateJoin[] = [];
   private postsSub: Subscription = new Subscription;
 
-  constructor(public postService: PostsService) {}
+  constructor(public roomsService: RoomsService) {}
 
   ngOnInit() {
-    this.posts = this.postService.getPosts();
-    this.postsSub = this.postService.getPostUpdateListener().subscribe((posts: Post[]) => {
+    this.posts = this.roomsService.getPosts();
+    this.postsSub = this.roomsService.getPostUpdateListener().subscribe((posts: RoomCreateJoin[]) => {
       this.posts = posts;
     });
   }
