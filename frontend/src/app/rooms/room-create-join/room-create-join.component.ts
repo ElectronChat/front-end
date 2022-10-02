@@ -18,4 +18,7 @@ export class RoomCreateJoinComponent {
     form.resetForm();
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+  }
 }

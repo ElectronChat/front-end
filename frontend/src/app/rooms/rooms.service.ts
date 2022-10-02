@@ -8,9 +8,9 @@ export class RoomsService {
   private rooms: RoomCreateJoin[] = [];
   private roomsUpdated = new Subject<RoomCreateJoin[]>();
 
-  getPosts() { return [...this.rooms]; }
+  getRooms() { return [...this.rooms]; }
 
-  getPostUpdateListener() {
+  getRoomUpdateListener() {
 
     return this.roomsUpdated.asObservable();
   }

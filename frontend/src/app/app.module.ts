@@ -9,7 +9,7 @@ import { MatToolbarModule }  from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, ArrayOfComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { RoomCreateJoinComponent } from './rooms/room-create-join/room-create-join.component';
@@ -20,6 +20,7 @@ import { PostListComponent } from './rooms/post-list/post-list.component';
 @NgModule({
   declarations: [
     AppComponent,
+    ArrayOfComponents,
     RoomCreateJoinComponent,
     HeaderComponent,
     PostListComponent
